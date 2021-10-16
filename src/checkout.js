@@ -1,22 +1,27 @@
-import React from 'react'
+import React from 'react';
+import './checkout.css';
+import Subtotal from './Subtotal';
 
-function checkout() {
+function Checkout() {
     return (
-        <div  className="checkout">
-      <div className="checkout--left">
-          <img className="checkout--adv" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21P1/pay_stripe_desk.png" alt="Adv" />
-          <h3 className="checkout--title">Your Shopping Details
-          </h3>
-          {/* Cart itrm Here */}
-          {/* Cart Item Here */}
-      </div>
-      <div className="checkout--right">
-          <h3>SubTotal (2 items): </h3>
+        <div className="checkout">
 
-      </div>
-            
+            <div className="checkout--left">
+                <img className="checkout--adv" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21P1/pay_stripe_desk.png" alt="adv" />
+
+                <div className="checkout--title">
+                    <h3>Your Shoping Details</h3>
+                </div>
+            </div>
+
+            <div className="checkout--right">
+                <Subtotal />
+
+            </div>
         </div>
-    )
+
+
+    );
 }
 
-export default checkout
+export default Checkout
